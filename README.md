@@ -1,33 +1,52 @@
 # AI Engineer Academy
 
-Praktyczny, sześciomiesięczny program rozwoju AI/LLM Engineer — od solidnych podstaw Pythona do produkcyjnych systemów opartych na modelach językowych.
+Praktyczna 6-miesięczna ścieżka nauki AI/LLM Engineer — od Pythona, pracy z danymi i FastAPI, przez Machine Learning, PyTorch, Transformers i RAG, po fine-tuning, Docker, deployment i MLOps.
 
-## Cel
+## Główne technologie
 
-Po ukończeniu kursu potrafisz samodzielnie przygotować dane, trenować i oceniać modele, budować aplikacje LLM/RAG, dostrajać modele oraz wdrażać je z monitoringiem.
+- Python
+- Git
+- NumPy
+- Pandas
+- scikit-learn
+- PyTorch
+- Hugging Face
+- FastAPI
+- Pydantic
+- Ollama
+- llama.cpp
+- Qdrant
+- PostgreSQL / pgvector
+- Docker
+- pytest
+- LoRA / QLoRA / PEFT
 
 ## Program
 
-| Miesiąc | Obszar | Projekt końcowy |
+| Miesiąc | Obszar | Projekt |
 | --- | --- | --- |
-| 01 | Python i praca z dokumentami | Document Analyzer |
-| 02 | ML i PyTorch | klasyfikator tekstu/obrazu |
-| 03 | LLM, prompting i narzędzia | asystent z tool calling |
-| 04 | RAG | wyszukiwarka wiedzy z cytowaniami |
-| 05 | Fine-tuning | dostrojony model zadaniowy |
-| 06 | Production | wdrożona, obserwowalna usługa AI |
+| 01 | Python, Git, dane, API | Document Analyzer API |
+| 02 | Machine Learning i PyTorch | Model klasyfikacyjny z API |
+| 03 | Transformers i lokalne LLM | Lokalny chatbot LLM |
+| 04 | RAG | Chat with Documents |
+| 05 | Fine-tuning | Dostrojony lokalny LLM |
+| 06 | Produkcja i MLOps | Private AI Knowledge Server |
 
-Szczegółowy harmonogram znajduje się w [m.md](m.md).
+Szczegółowy harmonogram i status nauki znajdują się w [`m.md`](m.md).
 
 ## Struktura repozytorium
 
-- `month-01-python/` — Python, pliki, testy i analizator dokumentów
+- `month-01-python/` — Python, Git, pliki, dane, FastAPI, testy i Docker
 - `month-02-ml-pytorch/` — podstawy ML i PyTorch
-- `month-03-llm/` — LLM, prompty, function calling i agenci
-- `month-04-rag/` — embeddingi, retrieval i ewaluacja RAG
-- `month-05-finetuning/` — dane, SFT oraz ocena dostrajania
-- `month-06-production/` — API, kontenery, obserwowalność i deployment
+- `month-03-llm/` — Transformers, Hugging Face i lokalne modele
+- `month-04-rag/` — embeddingi, vector DB, retrieval, reranking i evals
+- `month-05-finetuning/` — SFT, LoRA, QLoRA i PEFT
+- `month-06-production/` — deployment, monitoring, bezpieczeństwo i MLOps
 
 ## Sposób pracy
 
-Pracuj codziennie 60–120 minut. Każdy moduł kończ projektem, dokumentacją decyzji i krótką retrospektywą: co zadziałało, co nie oraz co poprawić w kolejnej iteracji.
+Zakładany rytm to około 60–120 minut dziennie. Każdy dzień kończy się małym ćwiczeniem lub fragmentem projektu oraz commitem do repozytorium. Po wykonaniu dnia jego status w `m.md` zmieniamy z `[ ]` na `[x]`.
+
+## Cel końcowy
+
+Zbudować kompletny **Private AI Knowledge Server**: system ingestujący dokumenty, indeksujący je, wyszukujący kontekst, generujący odpowiedzi przez LLM i działający jako wdrożona aplikacja API z testami, logowaniem i monitoringiem.
