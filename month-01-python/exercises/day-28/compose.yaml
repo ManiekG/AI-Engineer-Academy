@@ -1,0 +1,7 @@
+# Dzień 28: uruchom API i dodatkową usługę przez Docker Compose.
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    # TODO: dodaj healthcheck i zmienne środowiskowe.
