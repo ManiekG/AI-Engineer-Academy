@@ -5,10 +5,10 @@ pięć najczęstszych słów (bez rozróżniania wielkości liter).
 """
 
 
-def analyze(text: str) -> dict[str, object]:
-    # TODO
-    raise NotImplementedError
-
-
-if __name__ == "__main__":
+def analyze(text):
+    """Zwróć słownik ze statystykami tekstu."""
+    # TODO: połącz funkcje, pętle i słownik z dni 1–6.
     pass
+
+
+# TODO: przetestuj funkcję na jednym zdaniu i wypisz rezultat.

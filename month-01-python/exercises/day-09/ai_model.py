@@ -4,7 +4,7 @@
 class AIModel:
     """Model z nazwą, parametrami, kwantyzacją i wymaganym VRAM."""
 
-    def __init__(self, name: str, parameters_b: float, quantization: str, vram_required: float):
+    def __init__(self, name, parameters_b, quantization, vram_required):
         # TODO: przypisz atrybuty.
         pass
 
